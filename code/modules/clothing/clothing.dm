@@ -107,12 +107,6 @@
 					to_chat(H, "<span class='danger'>Your species cannot wear [src].</span>")
 				return 0
 
-	if(warfare_team)
-		if(ishuman(M))//hacky warfare shit
-			var/mob/living/carbon/human/H = M
-			if(H.warfare_faction != warfare_team)
-				return FALSE
-
 	return 1
 
 /obj/item/clothing/equipped(var/mob/user)
