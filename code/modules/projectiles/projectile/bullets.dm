@@ -342,7 +342,7 @@
 /obj/item/projectile/bullet/arrow //yes, I know - very icky, but I dont feel like adding a whole new system for the bow
 	name = "arrow" //LUUUUUUUUX!!
 	icon_state = "arow"
-	fire_sound = '' //find one
+	//fire_sound = '' find one
 	damage = 60
 	check_armour = "bullet"
 	light_power = 0 //not a tracer homie
