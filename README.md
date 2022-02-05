@@ -12,5 +12,7 @@ Join us on discord: https://discord.gg/Wh5AHB3ywS
 
 ## Contributors
 
-- Dëshmor
-- Lux
+- Dëshmor (Coding & Mapping)
+- Lux (Spriting)
+- Yhorm The Giant (Spriting)
+- Zeigh (Music)
