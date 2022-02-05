@@ -36,7 +36,7 @@
 	desc = "The Late-Roman Army standard-issue helmet for Legionnaires."
 	warfare_team = ROMANS
 	armor = list(melee = 60, bullet = 60, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0) //helps you out
-	icon_state = "roman_helmet"
+	icon_state = "romaninfantry"
 
 //ROMAN-LEGION SHOES
 
