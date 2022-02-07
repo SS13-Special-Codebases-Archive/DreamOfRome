@@ -2,7 +2,7 @@ var/siegewall = FALSE
 
 /datum/game_mode/barbarianinvasion
 	name = "Barbarian Invasion"
-	round_description = "The Barbarii have arrived at the frontiers of Rome."
+	round_description = "The Barbarii have arrived at the frontiers of Rome..."
 	extended_round_description = "The unholy inhabitants of beyond the frontiers have arrived to end the glory of Rome."
 	config_tag = "barbarianinvasion"
 	required_players = 0
