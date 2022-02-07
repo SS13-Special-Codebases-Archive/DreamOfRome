@@ -124,7 +124,7 @@
 /obj/structure/barricade/stone_h/crenelated //thanks civ
 	name = "crenelated stone wall"
 	desc = "A wall of stone blocks."
-	icon = 'icons/turf/walls.dmi'
+	icon = 'icons/turf/wall.dmi'
 	icon_state = "stone_brick_c"
 	material = "stone"
 	health = 300
@@ -156,7 +156,7 @@
 /obj/structure/barricade/stone_v/crenelated
 	name = "crenelated stone wall"
 	desc = "A wall of stone blocks."
-	icon = 'icons/turf/walls.dmi'
+	icon = 'icons/turf/wall.dmi'
 	icon_state = "stone_brick_c2"
 	material = "stone"
 	health = 300
@@ -200,4 +200,3 @@
 	health = 300
 	maxhealth = 300
 	color = null
-	
