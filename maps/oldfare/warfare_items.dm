@@ -483,8 +483,8 @@
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
 	body_parts_covered = FACE|EYES|HEAD
 
-/obj/item/clothing/shoes/prac_boots
-	name = "practioner boots"
+/obj/item/clothing/shoes/prac_boots //uh yea
+	name = "leather boots"
 	desc = "Squish."
 	icon_state = "prac_boots"
 	item_state = "prac_boots"
