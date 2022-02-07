@@ -119,7 +119,7 @@
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
 
-//BARRICADES
+//////BARRICADES///////
 
 /obj/structure/barricade/stone_h/crenelated //thanks civ
 	name = "crenelated stone wall"
@@ -200,3 +200,27 @@
 	health = 300
 	maxhealth = 300
 	color = null
+
+///////STRUCTURES////////
+
+/obj/item/flashlight/lantern //its different I swear!
+	name = "lantern"
+	icon_state = "lantern"
+	item_state = "lantern"
+	desc = "A simple lantern."
+	brightness_on = 6
+
+/obj/item/flashlight/lantern/anchored
+	anchored = TRUE
+
+//////DRINKS///////
+
+/obj/item/weapon/reagent_containers/food/drinks/canteen/amphora
+	name = "amphora"
+	desc = "A clay amphora."
+	icon = 'icons/obj/drinks.dmi'
+	volume = 150
+
+/obj/item/reagent_containers/food/drinks/canteen/amphora/New()
+	. = ..()
+	reagents.add_reagent(/datum/reagent/water, 50)
