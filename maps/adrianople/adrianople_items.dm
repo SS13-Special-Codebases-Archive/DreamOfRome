@@ -257,11 +257,11 @@
 
 /obj/item/device/flashlight/lantern/roman //its different I swear!
 	name = "lantern"
-	icon_state = "lantern_on"
-	item_state = "lantern_on"
+	icon_state = "lantern-on"
+	item_state = "lantern-on"
 	desc = "A simple lantern."
 	brightness_on = 6
-	set_light(brightness_on)
+	on = 1
 
 /obj/item/device/flashlight/lantern/roman/anchored
 	anchored = TRUE
@@ -446,7 +446,7 @@
 	icon_state = "slatefloor"
 	initial_flooring = /decl/flooring/slate
 
-/turf/unsimulated/floor/slate/New()
+/turf/simulated/floor/slate/New()
 	..()
 	temperature = T20C
 	dir = pick(GLOB.alldirs)
@@ -463,7 +463,7 @@
 	icon_state = "stone_bricks"
 	initial_flooring = /decl/flooring/stone
 
-/turf/unsimulated/floor/stone/New()
+/turf/simulated/floor/stone/New()
 	..()
 	temperature = T20C
 	dir = pick(GLOB.alldirs)
