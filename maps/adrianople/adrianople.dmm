@@ -11,8 +11,17 @@
 	},
 /turf/simulated/floor/stone,
 /area/adrianople/battlefield)
+"ca" = (
+/obj/effect/floor_decal/carpet{
+	dir = 1
+	},
+/turf/simulated/floor/holofloor/carpet,
+/area/adrianople/battlefield)
 "cj" = (
 /obj/structure/table/woodentable,
+/obj/item/coin/silver{
+	name = "Denarius"
+	},
 /turf/simulated/floor/newgrass/dirtnew,
 /area/adrianople/battlefield)
 "cn" = (
@@ -81,6 +90,12 @@
 /obj/item/device/flashlight/lantern/roman/anchored,
 /turf/simulated/wall/stonebrick,
 /area/adrianople/battlefield)
+"eD" = (
+/obj/structure/bed/chair/wood{
+	dir = 8
+	},
+/turf/simulated/floor/wood,
+/area/adrianople/battlefield)
 "eJ" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/structure/flora/ausbushes/pointybush,
@@ -148,6 +163,10 @@
 "gA" = (
 /obj/structure/flora/pottedplant,
 /turf/simulated/floor/stone,
+/area/adrianople/battlefield)
+"gV" = (
+/obj/structure/table/woodentable,
+/turf/simulated/floor/carpet/red,
 /area/adrianople/battlefield)
 "ha" = (
 /obj/structure/flora/ausbushes/stalkybush,
@@ -229,6 +248,11 @@
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/simulated/floor/newgrass/grass2,
 /area/adrianople/farawayhome)
+"ks" = (
+/obj/structure/table/woodentable,
+/obj/item/reagent_containers/food/snacks/tomatosoup,
+/turf/simulated/floor/wood,
+/area/adrianople/battlefield)
 "ku" = (
 /obj/structure/window/barrier/sandbag{
 	dir = 1
@@ -344,10 +368,11 @@
 /obj/item/clothing/head/helmet/legion/barbarian,
 /turf/simulated/floor/stone,
 /area/adrianople/battlefield)
-"qt" = (
-/obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/snacks/tomatosoup,
-/turf/simulated/floor/wood,
+"pU" = (
+/obj/structure/bed/chair/wood{
+	dir = 1
+	},
+/turf/simulated/floor/holofloor/carpet,
 /area/adrianople/battlefield)
 "qG" = (
 /obj/structure/flora/ausbushes/ywflowers,
@@ -372,6 +397,10 @@
 "rN" = (
 /obj/structure/closet/crate/rations,
 /turf/simulated/floor/stone,
+/area/adrianople/battlefield)
+"sj" = (
+/obj/structure/bed,
+/turf/simulated/floor/wood,
 /area/adrianople/battlefield)
 "su" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -449,6 +478,9 @@
 /obj/structure/barricade/stone_v/crenelated,
 /turf/simulated/floor/newgrass/grass2,
 /area/adrianople/battlefield)
+"vA" = (
+/turf/simulated/floor/carpet/red,
+/area/adrianople/farawayhome)
 "vF" = (
 /obj/structure/window/barrier/barrel,
 /turf/simulated/floor/stone,
@@ -487,6 +519,10 @@
 	},
 /turf/simulated/floor/holofloor/carpet,
 /area/adrianople/battlefield)
+"wv" = (
+/obj/item/device/flashlight/lantern/roman/anchored,
+/turf/simulated/wall/roman,
+/area/adrianople/farawayhome)
 "wA" = (
 /obj/structure/table/woodentable,
 /obj/item/melee/pilum,
@@ -500,11 +536,17 @@
 /turf/simulated/floor/newgrass/dirtnew,
 /area/adrianople/battlefield)
 "xN" = (
-/obj/machinery/door/unpowered/simple/roman,
-/turf/simulated/floor/wood,
+/obj/structure/closet/crate/rations/vegetables{
+	name = "Gothic Military Rations"
+	},
+/turf/simulated/floor/stone,
 /area/adrianople/battlefield)
 "xY" = (
 /turf/simulated/floor/newgrass/sand,
+/area/adrianople/battlefield)
+"xZ" = (
+/obj/structure/bed/chair/wood,
+/turf/simulated/floor/carpet/red,
 /area/adrianople/battlefield)
 "yy" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -549,11 +591,6 @@
 /obj/structure/flora/ausbushes/stalkybush,
 /turf/simulated/floor/newgrass/sand,
 /area/adrianople/battlefield)
-"Aa" = (
-/obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/snacks/cheesewedge,
-/turf/simulated/floor/wood,
-/area/adrianople/battlefield)
 "Am" = (
 /obj/structure/barricade/stone_h2/crenelated,
 /turf/simulated/floor/newgrass/grass2,
@@ -565,6 +602,10 @@
 /obj/item/clothing/suit/armor/legion,
 /obj/item/clothing/suit/armor/legion,
 /turf/simulated/floor/stone,
+/area/adrianople/battlefield)
+"AQ" = (
+/obj/structure/table/woodentable,
+/turf/simulated/floor/wood,
 /area/adrianople/battlefield)
 "AS" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -587,11 +628,6 @@
 	},
 /turf/simulated/floor/stone,
 /area/adrianople/battlefield)
-"BK" = (
-/obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/snacks/beetsoup,
-/turf/simulated/floor/wood,
-/area/adrianople/battlefield)
 "Cc" = (
 /obj/structure/flora/ausbushes/stalkybush,
 /turf/simulated/floor/newgrass/grass2,
@@ -608,9 +644,9 @@
 /obj/structure/flora/burnedbush,
 /turf/simulated/floor/newgrass/grass2,
 /area/adrianople/battlefield)
-"DM" = (
-/obj/structure/table/woodentable,
-/turf/simulated/floor/wood,
+"DA" = (
+/obj/item/device/flashlight/lantern/roman/anchored,
+/turf/simulated/wall/roman,
 /area/adrianople/battlefield)
 "DQ" = (
 /obj/structure/barricade/stone_h,
@@ -668,6 +704,11 @@
 /area/adrianople/battlefield)
 "FR" = (
 /turf/simulated/floor/stone,
+/area/adrianople/battlefield)
+"FW" = (
+/obj/structure/table/woodentable,
+/obj/item/reagent_containers/food/snacks/beetsoup,
+/turf/simulated/floor/wood,
 /area/adrianople/battlefield)
 "FY" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -841,16 +882,16 @@
 /obj/structure/flora/tree/thracejunglesmall,
 /turf/simulated/floor/newgrass/grass2,
 /area/adrianople/battlefield)
-"MW" = (
-/obj/structure/closet/crate/rations/vegetables{
-	name = "Gothic Military Rations"
-	},
-/turf/simulated/floor/stone,
-/area/adrianople/battlefield)
 "MZ" = (
 /obj/structure/flora/tree/thracejunglesmall3,
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/simulated/floor/newgrass/grass2,
+/area/adrianople/battlefield)
+"Oc" = (
+/obj/structure/bed/chair/wood{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/red,
 /area/adrianople/battlefield)
 "Of" = (
 /obj/structure/table/woodentable,
@@ -875,6 +916,11 @@
 "Pg" = (
 /obj/structure/window/barrier/sandbag,
 /turf/simulated/floor/newgrass/grass2,
+/area/adrianople/battlefield)
+"Pi" = (
+/obj/structure/table/woodentable,
+/obj/item/reagent_containers/food/snacks/cheesewedge,
+/turf/simulated/floor/wood,
 /area/adrianople/battlefield)
 "Pw" = (
 /turf/simulated/floor/wood,
@@ -1904,23 +1950,23 @@ cu
 QJ
 QJ
 QJ
+DA
 LR
 LR
 LR
-LR
-LR
+DA
 QJ
 hW
 GH
 QJ
 QJ
+DA
 LR
 LR
 LR
 LR
 LR
-LR
-XV
+wv
 "}
 (5,1,1) = {"
 IJ
@@ -2107,9 +2153,9 @@ QJ
 cu
 QJ
 LR
+sj
 Lg
-Lg
-Lg
+AQ
 LR
 cu
 QJ
@@ -2311,7 +2357,7 @@ QJ
 LR
 Lg
 Lg
-Lg
+eD
 LR
 QJ
 QJ
@@ -2320,11 +2366,11 @@ GH
 GH
 vU
 Lg
-Lg
-Lg
-Lg
-Lg
-Pw
+gv
+gv
+gv
+gv
+vA
 "}
 (7,1,1) = {"
 lD
@@ -2522,11 +2568,11 @@ QJ
 QJ
 LR
 Lg
-Lg
-Lg
-Lg
-Lg
-Pw
+xZ
+gV
+gV
+Oc
+vA
 "}
 (8,1,1) = {"
 lD
@@ -2724,11 +2770,11 @@ QJ
 cu
 LR
 Lg
-Lg
-Lg
-Lg
-Lg
-Pw
+xZ
+gV
+gV
+Oc
+vA
 "}
 (9,1,1) = {"
 lD
@@ -2915,9 +2961,9 @@ QJ
 cu
 QJ
 LR
-Lg
-Lg
-Lg
+du
+du
+du
 LR
 ZA
 ok
@@ -2926,11 +2972,11 @@ QJ
 ok
 LR
 Lg
-Lg
-Lg
-Lg
-Lg
-Pw
+xZ
+gV
+gV
+Oc
+vA
 "}
 (10,1,1) = {"
 lD
@@ -3116,11 +3162,11 @@ mN
 gm
 ZA
 QJ
+DA
 LR
 LR
 LR
-LR
-LR
+DA
 QJ
 QJ
 GH
@@ -3128,11 +3174,11 @@ QJ
 DS
 LR
 Lg
-Lg
-Lg
-Lg
-Lg
-Pw
+xZ
+gV
+gV
+Oc
+vA
 "}
 (11,1,1) = {"
 lD
@@ -3330,11 +3376,11 @@ Lz
 QJ
 LR
 Lg
-Lg
-Lg
-Lg
-Lg
-Pw
+xZ
+gV
+gV
+Oc
+vA
 "}
 (12,1,1) = {"
 lD
@@ -3531,12 +3577,12 @@ GH
 ok
 Zr
 LR
-Lg
-Lg
-Lg
-Lg
-Lg
-Pw
+du
+gv
+gv
+gv
+gv
+vA
 "}
 (13,1,1) = {"
 lD
@@ -3720,21 +3766,21 @@ LN
 fq
 fq
 lZ
+DA
 LR
 LR
 LR
 LR
 LR
-LR
-LR
+DA
 QJ
 QJ
 GH
 cu
 QJ
 LR
-Lg
-Lg
+du
+du
 Lg
 Lg
 Lg
@@ -3934,13 +3980,13 @@ QJ
 GH
 hW
 QJ
+DA
 LR
 LR
 LR
 LR
 LR
-LR
-XV
+wv
 "}
 (15,1,1) = {"
 lD
@@ -4338,11 +4384,11 @@ QJ
 GH
 ZA
 QJ
+DA
 LR
 LR
 LR
-LR
-LR
+DA
 LR
 XV
 "}
@@ -4544,8 +4590,8 @@ LR
 Lg
 Lg
 Lg
-Lg
-Lg
+du
+du
 XV
 "}
 (18,1,1) = {"
@@ -4728,26 +4774,26 @@ QJ
 ok
 QJ
 QJ
+DA
 LR
 LR
-LR
 Lg
 Lg
 Lg
 Lg
-BK
+FW
 LR
 cu
 ZA
 GH
 GH
 GH
-xN
+vU
 Lg
 Lg
 Lg
-Lg
-Lg
+ca
+pU
 XV
 "}
 (19,1,1) = {"
@@ -4937,7 +4983,7 @@ Lg
 Lg
 Lg
 Lg
-DM
+AQ
 LR
 QJ
 Yi
@@ -5139,7 +5185,7 @@ Lg
 Lg
 Lg
 Lg
-DM
+AQ
 LR
 cu
 QJ
@@ -5339,9 +5385,9 @@ HF
 sW
 Lg
 Lg
-Aa
-qt
-DM
+Pi
+ks
+AQ
 LR
 QJ
 Lz
@@ -5536,14 +5582,14 @@ QJ
 ZA
 Lz
 QJ
+DA
 LR
 LR
 LR
 LR
 LR
 LR
-LR
-LR
+DA
 LR
 QJ
 QJ
@@ -5551,9 +5597,9 @@ GH
 QJ
 QJ
 LR
-Lg
-Lg
-Lg
+KM
+AQ
+nl
 LR
 lF
 jR
@@ -5752,11 +5798,11 @@ QJ
 GH
 QJ
 ok
+DA
 LR
 LR
 LR
-LR
-LR
+DA
 QJ
 jR
 "}
@@ -6156,12 +6202,12 @@ QJ
 GH
 ok
 QJ
+DA
 LR
 LR
 LR
 LR
-LR
-LR
+DA
 IJ
 "}
 (26,1,1) = {"
@@ -6964,7 +7010,7 @@ QJ
 GH
 GH
 GH
-xN
+vU
 Lg
 Lg
 Lg
@@ -7772,12 +7818,12 @@ GH
 GH
 QJ
 QJ
+DA
 LR
 LR
 LR
 LR
-LR
-LR
+DA
 jR
 "}
 (34,1,1) = {"
@@ -19565,7 +19611,7 @@ QJ
 ZD
 FR
 FR
-MW
+xN
 iA
 ly
 GH
@@ -19767,7 +19813,7 @@ GH
 ZD
 FR
 FR
-MW
+xN
 iA
 ly
 GH
@@ -19969,7 +20015,7 @@ QJ
 iA
 vF
 FR
-MW
+xN
 iA
 ly
 GH
@@ -20364,7 +20410,7 @@ gu
 QJ
 GH
 My
-cj
+rs
 GH
 GH
 GH

@@ -257,10 +257,11 @@
 
 /obj/item/device/flashlight/lantern/roman //its different I swear!
 	name = "lantern"
-	icon_state = "lantern"
-	item_state = "lantern"
+	icon_state = "lantern_on"
+	item_state = "lantern_on"
 	desc = "A simple lantern."
 	brightness_on = 6
+	set_light(brightness_on)
 
 /obj/item/device/flashlight/lantern/roman/anchored
 	anchored = TRUE
