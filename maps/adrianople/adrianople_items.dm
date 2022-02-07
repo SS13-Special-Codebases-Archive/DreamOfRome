@@ -218,6 +218,7 @@
 /obj/item/reagent_containers/food/drinks/canteen/amphora
 	name = "amphora"
 	desc = "A clay amphora."
+	icon_state = "amphora"
 	icon = 'icons/obj/drinks.dmi'
 	volume = 150
 
