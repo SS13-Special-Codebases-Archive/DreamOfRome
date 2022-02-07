@@ -213,6 +213,9 @@
 /obj/item/device/flashlight/lantern/roman/anchored
 	anchored = TRUE
 
+
+
+
 //////DRINKS///////
 
 /obj/item/reagent_containers/food/drinks/canteen/amphora
