@@ -203,14 +203,14 @@
 
 ///////STRUCTURES////////
 
-/obj/item/flashlight/lantern //its different I swear!
+/obj/item/device/flashlight/lantern/roman //its different I swear!
 	name = "lantern"
 	icon_state = "lantern"
 	item_state = "lantern"
 	desc = "A simple lantern."
 	brightness_on = 6
 
-/obj/item/flashlight/lantern/anchored
+/obj/item/device/flashlight/lantern/roman/anchored
 	anchored = TRUE
 
 //////DRINKS///////
