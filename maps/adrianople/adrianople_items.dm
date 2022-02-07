@@ -317,9 +317,6 @@
 	icon = 'icons/obj/structures.dmi'
 	icon_state = "palisade"
 	health = 32
-	opacity = TRUE
-	hitsound = 'sound/effects/wooddoorhit.ogg'
-	flammable = TRUE
 
 
 ///////CONTAINERS///////
