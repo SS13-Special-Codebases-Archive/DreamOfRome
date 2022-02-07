@@ -8,9 +8,13 @@ This repo serves at the main code repository for our server. You are free to use
 
 Certain sprites generously provided to us by Civ13!
 
+Originally forked from IS12.
+
 Join us on discord: https://discord.gg/Wh5AHB3ywS
 
 ## Contributors
 
-- Dëshmor
-- Lux
+- Dëshmor (Coding & Mapping)
+- Lux (Spriting)
+- Yhorm The Giant (Spriting)
+- Zeigh (Music)
