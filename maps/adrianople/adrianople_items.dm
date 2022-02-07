@@ -124,7 +124,7 @@
 /obj/structure/barricade/stone_h
 	name = "stone wall"
 	desc = "A wall of stone blocks."
-	icon = 'icons/turf/walls.dmi'
+	icon = 'icons/turf/wall.dmi'
 	icon_state = "stone_brick"
 	material = "stone"
 	health = 300
@@ -133,7 +133,7 @@
 /obj/structure/barricade/stone_v
 	name = "stone wall"
 	desc = "A wall of stone blocks."
-	icon = 'icons/turf/walls.dmi'
+	icon = 'icons/turf/wall.dmi'
 	icon_state = "stone_brick2"
 	material = "stone"
 	health = 300
@@ -265,6 +265,77 @@
 /obj/item/device/flashlight/lantern/roman/anchored
 	anchored = TRUE
 
+/obj/structure/stairs/roman
+	icon_state = "wood2_stairs"
+
+/obj/structure/sink/well
+	name = "well"
+	icon_state = "well1"
+	desc = "A well connected to underground aquifiers of water. Refreshing!"
+
+/obj/machinery/cooker/fireplace //thanks civ, again
+	name = "campfire"
+	desc = "A campfire made with wood logs."
+	icon = 'icons/obj/kitchen.dmi'
+	icon_state = "fireplace_on"
+	layer = 2.9
+	density = FALSE
+	anchored = TRUE
+	light_power = 0.75
+	light_color = "#E38F46"
+
+	cook_type = "grilled"
+	cook_time = 100
+	food_color = "#a34719"
+	on_icon = "fireplace_on"
+	off_icon = "fireplace3"
+	can_burn_food = 1
+
+/obj/machinery/cooker/fireplace/attack_hand(var/mob/living/H)
+	if (icon_state == "fireplace")
+		visible_message("<span class = 'notice'>[H] lights \the [name].</span>")
+		icon_state = on_icon
+		update_icon()
+	else if (icon_state == "fireplace_on")
+		visible_message("<span class = 'notice'>[H] puts off \the [name].</span>")
+		set_light(0)
+		icon_state = "fireplace"
+		update_icon()
+	H.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+
+
+/obj/machinery/cooker/fireplace/Crossed(var/mob/living/M in range(1))
+	if (icon_state == "fireplace_on" && ishuman(M))
+		M.apply_damage(rand(2,4), BURN, "l_leg")
+		M.apply_damage(rand(2,4), BURN, "r_leg")
+		visible_message("<span class = 'warning'>[M] gets burnt by the [name]!</span>")
+
+/obj/structure/grille/palisade
+	name = "palisade"
+	desc = "A wooden palisade."
+	icon = 'icons/obj/structures.dmi'
+	icon_state = "palisade"
+	health = 32
+	opacity = TRUE
+	hitsound = 'sound/effects/wooddoorhit.ogg'
+	flammable = TRUE
+
+
+///////CONTAINERS///////
+
+/obj/structure/closet/crate/rations //it says rations, but its really for anything
+	name = "crate"
+	icon_state = "wood_crate"
+	icon_opened = "wood_crate_opened"
+	icon_closed = "wood_crate"
+
+/obj/structure/closet/crate/rations/vegetables
+	name = "Roman Military Rations"
+
+/obj/structure/closet/crate/rations/vegetables/WillContain()
+	return list(/obj/item/reagent_containers/food/snacks/loadedbakedpotato = 4,
+				/obj/item/reagent_containers/food/snacks/cheesewedge = 4,
+				/obj/item/reagent_containers/food/snacks/beetsoup = 4,)
 
 //////BARRIERS///////
 
@@ -285,6 +356,13 @@
 	icon_state = "sandbag"
 	layer = MOB_LAYER + 2
 	anchored = TRUE
+
+/obj/structure/window/barrier/barrel //im lazy
+	name = "barrel"
+	icon = 'icons/obj/barrel.dmi'
+	icon_state = "barrel_wood"
+	layer = MOB_LAYER + 2
+	anchored = FALSE
 
 // /obj/structure/window/barrier/attack_hand(var/mob/user as mob)
 // 	if (locate(src) in get_step(user, user.dir))
@@ -387,7 +465,7 @@
 	icon_state = "stone_bricks"
 	initial_flooring = /decl/flooring/stone
 
-/turf/unsimulated/slate/stone/New()
+/turf/unsimulated/floor/stone/New()
 	..()
 	temperature = T20C
 	dir = pick(GLOB.alldirs)
