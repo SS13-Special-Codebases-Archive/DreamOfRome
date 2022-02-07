@@ -85,3 +85,119 @@
 
 //////WEAPONS//////
 
+/obj/item/melee/gladius
+	name = "gladius"
+	desc = "Standard military issue side-arm of the Roman military."
+	icon = 'icons/obj/weapons.dmi'
+	icon_state = "gladius"
+	item_state = "gladius"
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
+	force = 20
+	block_chance = 20
+	sharp = TRUE
+	edge = TRUE
+	hitsound = "slash_sound"
+	drop_sound = 'sound/items/handle/axe_drop.ogg'
+	equipsound = 'sound/items/equip/axe_equip.ogg'
+	grab_sound = 'sound/items/handle/axe_grab.ogg'
+	grab_sound_is_loud = TRUE
+
+/obj/item/melee/pilum
+	name = "pilum"
+	desc = "Standard military issue weapon of the Roman military."
+	icon = 'icons/obj/weapons.dmi'
+	icon_state = "pilum"
+	item_state = "pilum"
+	slot_flags = SLOT_BACK
+	force = 30
+	block_chance = 0
+	sharp = TRUE
+	edge = FALSE
+	hitsound = "slash_sound"
+	drop_sound = 'sound/items/handle/axe_drop.ogg' //might wanna change this
+	equipsound = 'sound/items/equip/axe_equip.ogg'
+	grab_sound = 'sound/items/handle/axe_grab.ogg'
+	grab_sound_is_loud = TRUE
+
+//BARRICADES
+
+/obj/structure/barricade/stone_h/crenelated //thanks civ
+	name = "crenelated stone wall"
+	desc = "A wall of stone blocks."
+	icon = 'icons/turf/walls.dmi'
+	icon_state = "stone_brick_c"
+	material = "stone"
+	health = 300
+	maxhealth = 300
+
+// /obj/structure/barricade/stone_h/crenelated/attackby(obj/item/weapon/W as obj, mob/user as mob)
+// 	if (istype(W, /obj/item/weapon/siegeladder))
+// 		visible_message(
+// 			"<span class='danger'>\The [user] starts deploying \the [W.name].</span>",
+// 			"<span class='danger'>You start deploying \the [W.name].</span>")
+// 		if (do_after(user, 80, src))
+// 			visible_message(
+// 				"<span class='danger'>\The [user] has deployed \the [W.name]!</span>",
+// 				"<span class='danger'>You have deployed \the [W.name]!</span>")
+// 			qdel(W)
+// 			var/obj/item/weapon/siegeladder/ANCH = new/obj/item/weapon/siegeladder(src.loc)
+// 			ANCH.anchored = TRUE
+// 			src.climbable = TRUE
+// 			ANCH.deployed = TRUE
+// 			ANCH.icon_state = ANCH.depicon
+// 			ANCH.dir = src.dir
+// 			return
+// 	if (istype(W,/obj/item/weapon) || !istype(W,/obj/item/weapon/wrench) || !istype(W,/obj/item/weapon/hammer)) //No weapons can harm me! If not weapon and not a wrench.
+// 		user << "You hit the wall uselessly!"//sucker
+// 		return
+// 	else
+// 		..()
+
+/obj/structure/barricade/stone_v/crenelated
+	name = "crenelated stone wall"
+	desc = "A wall of stone blocks."
+	icon = 'icons/turf/walls.dmi'
+	icon_state = "stone_brick_c2"
+	material = "stone"
+	health = 300
+	maxhealth = 300
+
+// /obj/structure/barricade/stone_v/crenelated/attackby(obj/item/weapon/W as obj, mob/user as mob)
+// 	if (istype(W, /obj/item/weapon/siegeladder))
+// 		visible_message(
+// 			"<span class='danger'>\The [user] starts deploying \the [W.name].</span>",
+// 			"<span class='danger'>You start deploying \the [W.name].</span>")
+// 		if (do_after(user, 80, src))
+// 			visible_message(
+// 				"<span class='danger'>\The [user] has deployed \the [W.name]!</span>",
+// 				"<span class='danger'>You have deployed \the [W.name]!</span>")
+// 			qdel(W)
+// 			var/obj/item/weapon/siegeladder/ANCH = new/obj/item/weapon/siegeladder(src.loc)
+// 			ANCH.anchored = TRUE
+// 			src.climbable = TRUE
+// 			ANCH.deployed = TRUE
+// 			ANCH.icon_state = ANCH.depicon
+// 			ANCH.dir = src.dir
+// 			return
+// 	if (istype(W,/obj/item/weapon) || !istype(W,/obj/item/weapon/wrench) || !istype(W,/obj/item/weapon/hammer)) //No weapons can harm me! If not weapon and not a wrench.
+// 		user << "You hit the wall uselessly!"//sucker
+// 		return
+// 	else
+// 		..()
+
+/obj/structure/barricade/stone_h/crenelated/New()
+	..()
+	icon_state = "stone_brick_c"
+	name = "crenelated stone wall"
+	health = 300
+	maxhealth = 300
+	color = null
+
+/obj/structure/barricade/stone_v/crenelated/New()
+	..()
+	icon_state = "stone_brick_c2"
+	name = "crenelated stone wall"
+	health = 300
+	maxhealth = 300
+	color = null
+	
