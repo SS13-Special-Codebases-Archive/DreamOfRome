@@ -215,7 +215,7 @@
 
 //////DRINKS///////
 
-/obj/item/weapon/reagent_containers/food/drinks/canteen/amphora
+/obj/item/reagent_containers/food/drinks/canteen/amphora
 	name = "amphora"
 	desc = "A clay amphora."
 	icon = 'icons/obj/drinks.dmi'
