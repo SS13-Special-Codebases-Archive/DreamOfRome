@@ -121,6 +121,24 @@
 
 //////BARRICADES///////
 
+/obj/structure/barricade/stone_h
+	name = "stone wall"
+	desc = "A wall of stone blocks."
+	icon = 'icons/turf/walls.dmi'
+	icon_state = "stone_brick"
+	material = "stone"
+	health = 300
+	maxhealth = 300
+
+/obj/structure/barricade/stone_v
+	name = "stone wall"
+	desc = "A wall of stone blocks."
+	icon = 'icons/turf/walls.dmi'
+	icon_state = "stone_brick2"
+	material = "stone"
+	health = 300
+	maxhealth = 300
+
 /obj/structure/barricade/stone_h/crenelated //thanks civ
 	name = "crenelated stone wall"
 	desc = "A wall of stone blocks."
@@ -185,6 +203,24 @@
 // 	else
 // 		..()
 
+/obj/structure/barricade/stone_v2/crenelated
+	name = "crenelated stone wall"
+	desc = "A wall of stone blocks."
+	icon = 'icons/turf/wall.dmi'
+	icon_state = "stone_brick_d"
+	material = "stone"
+	health = 300
+	maxhealth = 300
+
+/obj/structure/barricade/stone_h2/crenelated
+	name = "crenelated stone wall"
+	desc = "A wall of stone blocks."
+	icon = 'icons/turf/wall.dmi'
+	icon_state = "stone_brick_d2"
+	material = "stone"
+	health = 300
+	maxhealth = 300
+
 /obj/structure/barricade/stone_h/crenelated/New()
 	..()
 	icon_state = "stone_brick_c"
@@ -193,7 +229,23 @@
 	maxhealth = 300
 	color = null
 
-/obj/structure/barricade/stone_v/crenelated/New()
+/obj/structure/barricade/stone_v2/crenelated/New()
+	..()
+	icon_state = "stone_brick_d"
+	name = "crenelated stone wall"
+	health = 300
+	maxhealth = 300
+	color = null
+
+/obj/structure/barricade/stone_h2/crenelated/New()
+	..()
+	icon_state = "stone_brick_d2"
+	name = "crenelated stone wall"
+	health = 300
+	maxhealth = 300
+	color = null
+
+/obj/structure/barricade/stone_v2/crenelated/New()
 	..()
 	icon_state = "stone_brick_c2"
 	name = "crenelated stone wall"
@@ -214,7 +266,137 @@
 	anchored = TRUE
 
 
+//////BARRIERS///////
 
+
+/obj/structure/window/barrier
+	icon = 'icons/obj/structures.dmi'
+	name = "barrier"
+	icon_state = "sandbag"
+	layer = MOB_LAYER + 2 //just above mobs
+	anchored = TRUE
+	mouse_drop_zone = TRUE
+	var/incomplete = FALSE
+	maxhealth = 30
+	health = 30
+
+/obj/structure/window/barrier/sandbag
+	name = "sandbag wall"
+	icon_state = "sandbag"
+	layer = MOB_LAYER + 2
+	anchored = TRUE
+
+// /obj/structure/window/barrier/attack_hand(var/mob/user as mob)
+// 	if (locate(src) in get_step(user, user.dir))
+// 		if (WWinput(user, "Dismantle this [src]?", "Dismantle [src]", "Yes", list("Yes", "No")) == "Yes")
+// 			visible_message("<span class='danger'>[user] starts dismantling the [src].</span>", "<span class='danger'>You start dismantling the [src].</span>")
+// 			if (do_after(user, 200, src))
+// 				visible_message("<span class='danger'>[user] finishes dismantling the [src].</span>", "<span class='danger'>You finish dismantling the [src].</span>")
+// 				var/turf = get_turf(src)
+// 				// if (!istype(src, /obj/structure/window/barrier/incomplete))
+// 				// 	for (var/v in TRUE to rand(4,6))
+// 				// 		new /obj/item/weapon/barrier(turf)
+// 				// else
+// 				// 	var/obj/structure/window/barrier/incomplete/I = src
+// 				// 	for (var/v in TRUE to (1 + pick(I.progress-1, I.progress)))
+// 				// 		new /obj/item/weapon/barrier(turf)
+// 				qdel(src)
+
+/obj/structure/window/barrier/ex_act(severity)
+	switch(severity)
+		if (1.0)
+			qdel(src)
+			return
+		if (2.0)
+			qdel(src)
+			return
+		else
+			if (prob(50))
+				return ex_act(2.0)
+	return
+
+/obj/structure/window/barrier/New(location, var/mob/creator)
+	loc = location
+
+	if (creator && ismob(creator))
+		dir = creator.dir
+	else
+		var/ndir = creator
+		dir = ndir
+
+	set_dir(dir)
+
+	switch (dir)
+		if (NORTH)
+			layer = MOB_LAYER - 0.01
+			pixel_y = FALSE
+		if (SOUTH)
+			layer = MOB_LAYER + 2
+			pixel_y = FALSE
+		if (EAST)
+			layer = MOB_LAYER - 0.05
+			pixel_x = FALSE
+		if (WEST)
+			layer = MOB_LAYER - 0.05
+			pixel_x = FALSE
+
+//////FLOOR/////////
+
+/decl/flooring/slate
+	name = "slate floor"
+	desc = "Rough slate flooring."
+	icon = 'icons/turf/floors.dmi'
+	icon_base = "slatefloor"
+	has_damage_range = 6
+	damage_temperature = T0C+200
+	descriptor = "tiles"
+	//build_type = /obj/item/stack/tile/wood
+	flags = TURF_CAN_BREAK | TURF_REMOVE_CROWBAR
+
+/decl/flooring/stone
+	name = "slate floor"
+	desc = "Rough stone flooring."
+	icon = 'icons/turf/floors.dmi'
+	icon_base = "stone_bricks"
+	has_damage_range = 6
+	damage_temperature = T0C+200
+	descriptor = "tiles"
+	//build_type = /obj/item/stack/tile/wood
+	flags = TURF_CAN_BREAK | TURF_REMOVE_CROWBAR
+
+/turf/simulated/floor/slate
+	name = "slate floor"
+	icon = 'icons/turf/floors.dmi'
+	icon_state = "slatefloor"
+	initial_flooring = /decl/flooring/slate
+
+/turf/unsimulated/floor/slate/New()
+	..()
+	temperature = T20C
+	dir = pick(GLOB.alldirs)
+	if(!(locate(/obj/effect/lighting_dummy/daylight) in src))
+		new /obj/effect/lighting_dummy/daylight(src)
+	spawn(1)
+		overlays.Cut()
+		vis_contents.Cut()
+		update_icon()
+
+/turf/simulated/floor/stone
+	name = "stone floor"
+	icon = 'icons/turf/floors.dmi'
+	icon_state = "stone_bricks"
+	initial_flooring = /decl/flooring/stone
+
+/turf/unsimulated/slate/stone/New()
+	..()
+	temperature = T20C
+	dir = pick(GLOB.alldirs)
+	if(!(locate(/obj/effect/lighting_dummy/daylight) in src))
+		new /obj/effect/lighting_dummy/daylight(src)
+	spawn(1)
+		overlays.Cut()
+		vis_contents.Cut()
+		update_icon()
 
 //////DRINKS///////
 
