@@ -440,6 +440,17 @@
 	//build_type = /obj/item/stack/tile/wood
 	flags = TURF_CAN_BREAK | TURF_REMOVE_CROWBAR
 
+/decl/flooring/romanstairs1
+	name = "wood stairs"
+	desc = "Wooden stairs."
+	icon = 'icons/obj/sstairs.dmi'
+	icon_base = "wood2_stairs"
+	has_damage_range = 6
+	damage_temperature = T0C+200
+	descriptor = "tiles"
+	//build_type = /obj/item/stack/tile/wood
+	flags = TURF_CAN_BREAK | TURF_REMOVE_CROWBAR | TURF_IS_FRAGILE
+
 /turf/simulated/floor/slate
 	name = "slate floor"
 	icon = 'icons/turf/floors.dmi'
@@ -450,7 +461,7 @@
 	..()
 	temperature = T20C
 	dir = pick(GLOB.alldirs)
-	if(!(locate(/obj/effect/lighting_dummy/daylight) in src))
+	if(!(locate(/obj/effect/lighting_dummy/daylight) in src) && has_light)
 		new /obj/effect/lighting_dummy/daylight(src)
 	spawn(1)
 		overlays.Cut()
@@ -467,7 +478,24 @@
 	..()
 	temperature = T20C
 	dir = pick(GLOB.alldirs)
-	if(!(locate(/obj/effect/lighting_dummy/daylight) in src))
+	if(!(locate(/obj/effect/lighting_dummy/daylight) in src) && has_light)
+		new /obj/effect/lighting_dummy/daylight(src)
+	spawn(1)
+		overlays.Cut()
+		vis_contents.Cut()
+		update_icon()
+
+/turf/simulated/floor/romanstairs1
+	name = "wood stair"
+	icon = 'icons/obj/sstairs.dmi'
+	icon_state = "wood2_stairs"
+	initial_flooring = /decl/flooring/romanstairs1
+
+/turf/simulated/floor/romanstairs1/New()
+	..()
+	temperature = T20C
+	dir = pick(GLOB.alldirs)
+	if(!(locate(/obj/effect/lighting_dummy/daylight) in src) && has_light)
 		new /obj/effect/lighting_dummy/daylight(src)
 	spawn(1)
 		overlays.Cut()

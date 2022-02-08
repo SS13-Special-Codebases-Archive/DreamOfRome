@@ -4,13 +4,6 @@
 /obj/structure/flora/tree/thracepine,
 /turf/simulated/floor/newgrass/grass2,
 /area/adrianople/farawayhome)
-"aA" = (
-/obj/structure/stairs/east,
-/obj/structure/stairs/roman{
-	dir = 4
-	},
-/turf/simulated/floor/stone,
-/area/adrianople/battlefield)
 "ca" = (
 /obj/effect/floor_decal/carpet{
 	dir = 1
@@ -145,12 +138,6 @@
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/simulated/floor/newgrass/grass2,
 /area/adrianople/battlefield)
-"gr" = (
-/obj/structure/stairs/roman{
-	dir = 4
-	},
-/turf/simulated/floor/newgrass/grass2,
-/area/adrianople/battlefield)
 "gu" = (
 /obj/structure/grille/palisade{
 	dir = 1
@@ -173,13 +160,6 @@
 /obj/structure/flora/ausbushes/sunnybush,
 /turf/simulated/floor/newgrass/grass2,
 /area/adrianople/farawayhome)
-"hF" = (
-/obj/structure/stairs/west,
-/obj/structure/stairs/roman{
-	dir = 8
-	},
-/turf/simulated/floor/newgrass/grass2,
-/area/adrianople/battlefield)
 "hV" = (
 /obj/structure/flora/tree/thracepine,
 /turf/simulated/floor/newgrass/grass2,
@@ -299,11 +279,6 @@
 "mw" = (
 /turf/simulated/floor/slate,
 /area/adrianople/battlefield)
-"my" = (
-/obj/structure/stairs/north,
-/obj/structure/stairs/roman,
-/turf/simulated/floor/stone,
-/area/adrianople/battlefield)
 "mN" = (
 /obj/structure/flora/ausbushes/stalkybush,
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -332,11 +307,6 @@
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/structure/flora/ausbushes/reedbush,
 /obj/structure/flora/ausbushes/sunnybush,
-/turf/simulated/floor/newgrass/grass2,
-/area/adrianople/battlefield)
-"nx" = (
-/obj/structure/stairs/north,
-/obj/structure/stairs/roman,
 /turf/simulated/floor/newgrass/grass2,
 /area/adrianople/battlefield)
 "ok" = (
@@ -561,13 +531,6 @@
 /obj/structure/flora/ausbushes/reedbush,
 /turf/simulated/floor/newgrass/grass2,
 /area/adrianople/battlefield)
-"yP" = (
-/obj/structure/stairs/east,
-/obj/structure/stairs/roman{
-	dir = 4
-	},
-/turf/simulated/floor/newgrass/grass2,
-/area/adrianople/battlefield)
 "yR" = (
 /obj/structure/window/barrier/sandbag{
 	dir = 4
@@ -659,10 +622,9 @@
 /turf/simulated/floor/newgrass/grass2,
 /area/adrianople/battlefield)
 "Ec" = (
-/obj/structure/stairs/roman{
+/turf/simulated/floor/romanstairs1{
 	dir = 4
 	},
-/turf/simulated/floor/stone,
 /area/adrianople/battlefield)
 "EH" = (
 /obj/structure/closet/crate/rations,
@@ -670,13 +632,6 @@
 /obj/item/clothing/head/helmet/legion,
 /obj/item/clothing/head/helmet/legion,
 /obj/item/clothing/head/helmet/legion,
-/turf/simulated/floor/stone,
-/area/adrianople/battlefield)
-"EM" = (
-/obj/structure/stairs/west,
-/obj/structure/stairs/roman{
-	dir = 8
-	},
 /turf/simulated/floor/stone,
 /area/adrianople/battlefield)
 "Ff" = (
@@ -687,11 +642,7 @@
 /turf/simulated/floor/newgrass/grass2,
 /area/adrianople/battlefield)
 "Fj" = (
-/obj/structure/stairs/north,
-/obj/structure/stairs/roman{
-	dir = 1
-	},
-/turf/simulated/floor/stone,
+/turf/simulated/floor/romanstairs1,
 /area/adrianople/battlefield)
 "Ft" = (
 /obj/structure/bed,
@@ -760,12 +711,6 @@
 	dir = 8
 	},
 /turf/simulated/floor/holofloor/carpet,
-/area/adrianople/battlefield)
-"HM" = (
-/obj/structure/stairs/roman{
-	dir = 8
-	},
-/turf/simulated/floor/newgrass/grass2,
 /area/adrianople/battlefield)
 "HS" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -1005,10 +950,9 @@
 /turf/simulated/floor/newgrass/dirtnew,
 /area/adrianople/battlefield)
 "Th" = (
-/obj/structure/stairs/roman{
+/turf/simulated/floor/romanstairs1{
 	dir = 8
 	},
-/turf/simulated/floor/stone,
 /area/adrianople/battlefield)
 "Tl" = (
 /obj/structure/grille/palisade{
@@ -13232,7 +13176,7 @@ FR
 FR
 Bs
 Gi
-EM
+Th
 vk
 Bs
 Bs
@@ -13434,7 +13378,7 @@ FR
 zK
 QJ
 Pg
-hF
+Th
 ku
 uR
 QJ
@@ -13447,7 +13391,7 @@ vd
 QJ
 Ta
 Pg
-HM
+Th
 ku
 Zr
 jy
@@ -15653,8 +15597,8 @@ QJ
 uR
 QG
 FR
-my
-nx
+Fj
+Fj
 QJ
 GH
 Rn
@@ -15856,7 +15800,7 @@ oV
 DQ
 FR
 Fj
-nx
+Fj
 GH
 GH
 yy
@@ -18080,7 +18024,7 @@ FR
 zK
 QJ
 Pg
-yP
+Ec
 Ff
 GH
 QJ
@@ -18093,7 +18037,7 @@ vd
 QJ
 ZA
 Pg
-gr
+Ec
 XB
 QJ
 jy
@@ -18282,7 +18226,7 @@ FR
 FR
 Qj
 dA
-aA
+Ec
 wp
 Qj
 Qj

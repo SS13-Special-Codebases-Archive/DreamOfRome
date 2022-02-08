@@ -94,7 +94,7 @@
 	..()
 	temperature = T20C
 	dir = pick(GLOB.alldirs)
-	if(!(locate(/obj/effect/lighting_dummy/daylight) in src))
+	if(!(locate(/obj/effect/lighting_dummy/daylight) in src) && has_light)
 		new /obj/effect/lighting_dummy/daylight(src)
 	spawn(1)
 		overlays.Cut()
