@@ -1,4 +1,4 @@
-## Dream of Rome
+## Dream of Rome (ORIGINAL DESCRIPTION)
 
 Welcome to Dream of Rome!
 
@@ -10,11 +10,13 @@ Certain sprites generously provided to us by Civ13!
 
 Originally forked from IS12.
 
-Join us on discord: https://discord.gg/Wh5AHB3ywS
-
 ## Contributors
 
 - Dëshmor (Coding & Mapping)
 - Lux (Spriting)
 - Yhorm The Giant (Spriting)
 - Zeigh (Music)
+
+
+______
+Project from a while back that I never finished. Must be compiled in BYOND 514 unless you wish to deal with compile errors arising from 515.
